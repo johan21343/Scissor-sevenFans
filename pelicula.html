@@ -11,7 +11,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="icon" href="seven.jpg" type="image/x-icon" />
+    <title>Pelicula Scissor Seven</title>
+    <link rel="icon" href="icon.jpg" type="image/x-icon" />
     <style>
       body {
         font-family: "Segoe UI";
@@ -26,22 +27,25 @@
         display: flex;
         justify-content: space-around;
         padding: 20px 0 10px;
+        flex-wrap: wrap;
       }
       a.nav-principal {
-        color: black; /* Default color for navigation links */
+        color: black;
         text-decoration: none;
         border: white solid;
         padding: 5px;
         border-radius: 20px;
         font-family: "Segoe UI";
+        margin: 5px;
       }
       .fer {
-        background: rgba(0, 0, 0, 0.9); /* Ajustado para correcta opacidad */
-        color: white; /* Sets text color to white for this container */
+        background: rgba(0, 0, 0, 0.9);
+        color: white;
       }
       a.xdd {
-        color: white; /* This will ensure that links with class 'xdd' are white */
+        color: white;
       }
+
       .informacion {
         display: inline-block;
         display: flex;
@@ -55,7 +59,49 @@
       .img {
         width: 200px;
         margin: 10px;
-        height: 200pxpx;
+      } /* Estilos para tablets */ /* Estilos específicos para dispositivos móviles */
+      @media (min-width: 601px) and (max-width: 1024px) {
+        .informacion {
+          display: inline-block;
+          display: flex;
+          margin: 30px;
+          flex-direction: row;
+        }
+        .letra {
+          font-family: sans-serif;
+          font-size: large;
+        }
+        .img {
+          width: 200px;
+          margin: 10px;
+        }
+      }
+
+      @media (max-width: 600px) {
+        nav {
+          flex-direction: row;
+          flex-wrap: wrap;
+          overflow-x: auto; /* Allows horizontal scrolling for nav items */
+        }
+        a.nav-principal {
+          margin: 5px; /* Adjusts margin for a tighter fit */
+          padding: 5px 8px; /* Slightly smaller padding for mobile */
+        }
+        .informacion {
+          display: inline-block;
+          display: flex;
+          margin: 30px;
+          flex-direction: row;
+        }
+        .letra {
+          font-family: sans-serif;
+          font-size: medium;
+        }
+        .img {
+          width: 90px;
+          margin: 10px;
+          height: 150px;
+        }
       }
     </style>
   </head>
@@ -66,6 +112,7 @@
         <nav>
           <a class="nav-principal xdd" href="index2.html">Blog del Fandom</a>
           <a class="nav-principal xdd" href="temporada5.html">Temporada 5</a>
+          <a class="nav-principal xdd" href="pelicula.html">Película</a>
           <a class="nav-principal xdd" href="index.html">Iniciar Sesion</a>
           <a class="nav-principal xdd" href="registrarse.html">Registrarse</a>
           <a class="nav-principal xdd" href="Preguntas.html"
@@ -82,7 +129,7 @@
           rodada por lo pronto los mantendremos informados cada que haya nueva
           información.
         </p>
-        <img class="img" src="scissor.png" />
+        <img class="img" src="scissor.png" alt="Scissor Seven" />
       </div>
     </header>
   </body>

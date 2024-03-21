@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Scissor Seven Latino</title>
+    <title>Scissor Seven Fans</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
@@ -11,7 +11,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="icon" href="seven.jpg" type="image/x-icon" />
+    <title>Preguntas Scissor Seven</title>
+    <link rel="icon" href="icon.jpg" type="image/x-icon" />
     <style>
       body {
         font-family: "Segoe UI";
@@ -25,30 +26,65 @@
         text-align: center;
         display: flex;
         justify-content: space-around;
+        flex-wrap: wrap; /* Permite que los elementos de navegación se ajusten según el ancho */
         padding: 20px 0 10px;
       }
       a.nav-principal {
-        color: black; /* Default color for navigation links */
+        color: black;
         text-decoration: none;
         border: white solid;
         padding: 5px;
         border-radius: 20px;
         font-family: "Segoe UI";
+        margin: 5px; /* Añade separación entre los botones */
       }
       .fer {
-        background: rgba(0, 0, 0, 0.9); /* Ajustado para correcta opacidad */
-        color: white; /* Sets text color to white for this container */
+        background: rgba(0, 0, 0, 0.9);
+        color: white;
       }
       a.xdd {
-        color: white; /* This will ensure that links with class 'xdd' are white */
+        color: white;
       }
       .pre {
-        font-size:x-large;
-        font-family: 'Segoe UI;
+        font-size: x-large;
+        font-family: "Segoe UI";
       }
-      .gun{
-        font-family: sans-serif;
+      .gun {
         font-size: large;
+      }
+
+      /* Estilos para tablets */
+      @media (min-width: 601px) and (max-width: 1024px) {
+        .pre {
+          font-size: x-large; /* Ajusta el tamaño para una mejor visualización en tablets */
+        }
+        .gun {
+          font-size: large;
+        }
+        nav {
+          justify-content: center; /* Centra los elementos de navegación */
+        }
+        a.nav-principal {
+          padding: 10px; /* Aumenta el padding para facilitar la interacción táctil */
+          margin: 5px; /* Asegura una separación adecuada */
+        }
+      }
+
+      /* Estilos para dispositivos móviles */
+      @media (max-width: 600px) {
+        nav {
+          justify-content: center; /* Centra los elementos de navegación */
+        }
+        a.nav-principal {
+          padding: 10px; /* Aumenta el padding para facilitar la interacción táctil */
+          margin: 5px; /* Asegura una separación adecuada */
+        }
+        .pre {
+          font-size: large; /* Reduce el tamaño del texto para dispositivos móviles */
+        }
+        .gun {
+          font-size: medium;
+        }
       }
     </style>
   </head>
@@ -60,8 +96,8 @@
           <a class="nav-principal xdd" href="index2.html">Blog del Fandom</a>
           <a class="nav-principal xdd" href="temporada5.html">Temporada 5</a>
           <a class="nav-principal xdd" href="pelicula.html">Película</a>
-          <a class="nav-principal xdd" href="registrarse.html">Registrarse</a>
           <a class="nav-principal xdd" href="index.html">Iniciar Sesion</a>
+          <a class="nav-principal xdd" href="registrarse.html">Crear Cuenta</a>
         </nav>
       </div>
       <div>
@@ -70,11 +106,7 @@
         </p>
         <br />
         <p class="gun">
-          No, una vez que salgan los capítulos en streaming seguirá la página.
-          Para información sobre futuras temporadas o proyectos<br />
-          y también. Tenemos pensado agregar los cómics al español que, aunque,
-          va más. Avanzada la serie, el manga sería para un público.<br />
-          Un poco más adulto por incluir más violencia que la serie.
+          No, una vez que salgan los capítulos en streaming seguirá la página...
         </p>
         <br />
         <p class="pre">
@@ -82,10 +114,13 @@
         </p>
         <br />
         <p class="gun">
-          A lo largo del tiempo hemos tenido diferentes canales donde subíamos.
-          Los capítulos y algunos los tumbaron, pero siempre encontramos la
-          forma. De que llegue la serie a ustedes, así que no se preocupen.
+          A lo largo del tiempo hemos tenido diferentes canales...
         </p>
+        <br />
+        <p class="pre">¿Cuando van a sacar la 5 Temporada?</p>
+        <br />
+        <p class="gun">Aunque aun no hay una fecha exacta</p>
+        <br />
       </div>
     </header>
   </body>

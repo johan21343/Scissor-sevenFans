@@ -11,7 +11,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="icon" href="seven.jpg" type="image/x-icon" />
+    <title></title>
+    <link rel="icon" href="icon.jpg" type="image/x-icon" />
     <style>
       body {
         font-family: "Segoe UI";
@@ -26,6 +27,7 @@
         display: flex;
         justify-content: space-around;
         padding: 20px 0 10px;
+        flex-wrap: wrap;
       }
       a.nav-principal {
         color: black; /* Default color for navigation links */
@@ -34,6 +36,7 @@
         padding: 5px;
         border-radius: 20px;
         font-family: "Segoe UI";
+        margin: 5px;
       }
       .fer {
         background: rgba(0, 0, 0, 0.9); /* Ajustado para correcta opacidad */
@@ -55,6 +58,52 @@
       .img {
         width: 200px;
         margin: 10px;
+      }
+      @media (min-width: 601px) and (max-width: 1024px) {
+        .informacion {
+          display: inline-block;
+          display: flex;
+          margin: 30px;
+          flex-direction: row;
+        }
+        .letra {
+          font-family: sans-serif;
+          font-size: large;
+        }
+        .img {
+          width: 150px;
+          margin: 10px;
+        }
+        nav {
+          justify-content: center; /* Centra los elementos de navegación */
+        }
+        a.nav-principal {
+          padding: 10px; /* Aumenta el padding para facilitar la interacción táctil */
+          margin: 5px; /* Asegura una separación adecuada */
+        }
+      }
+      @media (max-width: 600px) {
+        .informacion {
+          display: inline-block;
+          display: flex;
+          margin: 30px;
+          flex-direction: row;
+        }
+        .letra {
+          font-family: sans-serif;
+          font-size: medium;
+        }
+        .img {
+          width: 70px;
+          margin: 10px;
+        }
+        nav {
+          justify-content: center; /* Centra los elementos de navegación */
+        }
+        a.nav-principal {
+          padding: 10px; /* Aumenta el padding para facilitar la interacción táctil */
+          margin: 5px; /* Asegura una separación adecuada */
+        }
       }
     </style>
   </head>
@@ -89,8 +138,26 @@
           junto con el guardaespaldas ya habían llegado a la casa de su padre,
           así que nos espera algo muy grande en esta temporada.
         </p>
-        <img src="eleven.jpg" class="img" />
+        <img src="eleven.jpg" class="img" /><br />
       </div>
+      <div class="informacion">
+        <p class="letra">
+          Al final de la tercera temporada se nos muestra un flashback de Seven
+          Protegiendo a la que lo traicionó, del dragón de Xuanwu el cual
+          sabemos. Que Seven asesino, pero en esta imagen filtrada de la
+          Temporada 5 Se nos muestra un boceto de dicho dragón así que
+          posiblemente nos lleguén a mostrar todo el pasado de Seven.
+        </p>
+        <img src="dragon.jpg" class="img" />
+      </div>
+      <div class="informacion">
+        <p class="letra">
+          Y en esta otra imagen que se filtro, se puede apreciar lo mucho que a
+          cambiado la animación desde la temporada 1 :0.
+        </p>
+        <img src="xiao.jpg" alt="" class="img" />
+      </div>
+      <div class="informacion"><p class="letra"></p></div>
     </header>
   </body>
 </html>

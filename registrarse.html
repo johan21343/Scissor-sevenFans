@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Seven</title>
-    <link rel="icon" href="seven.jpg" type="image/x-icon" />
+    <title>Registro</title>
+    <link rel="icon" href="icon.jpg" type="image/x-icon" />
     <style>
       body,
       html {
@@ -21,7 +21,7 @@
       }
 
       .inicio {
-        color: white;
+        color: black;
         font-family: "Segoe UI";
         background: rgba(0, 0, 0, 0.5);
         padding: 40px;
@@ -43,6 +43,11 @@
         width: 100%;
         box-sizing: border-box;
       }
+      .jose:focus {
+        border-color: transparent; /* Cambio de color de borde al hacer foco */
+        box-shadow: 0 0 8px 0 rgba(74, 144, 226, 0.5); /* Añadido sombra para resaltar */
+        outline: none; /* Elimina el contorno predeterminado para usar el personalizado */
+      }
 
       #b {
         background: rgb(2, 0, 36);
@@ -58,6 +63,72 @@
       label {
         align-self: flex-start;
       }
+
+      .btn-56,
+      .btn-56 *,
+      .btn-56 :after,
+      .btn-56 :before,
+      .btn-56:after,
+      .btn-56:before {
+        border: 0 solid;
+        box-sizing: border-box;
+      }
+      .btn-56 {
+        -webkit-tap-highlight-color: transparent;
+        -webkit-appearance: button;
+        background-color: #000;
+        background-image: none;
+        color: #fff;
+        cursor: pointer;
+        font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+          Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+          Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+        font-size: 100%;
+        line-height: 1.5;
+        margin: 0;
+        -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+        padding: 0;
+      }
+      .btn-56:disabled {
+        cursor: default;
+      }
+      .btn-56:-moz-focusring {
+        outline: auto;
+      }
+      .btn-56 svg {
+        display: block;
+        vertical-align: middle;
+      }
+      .btn-56 [hidden] {
+        display: none;
+      }
+      .btn-56 {
+        border: 1px solid;
+        border-radius: 999px;
+        box-sizing: border-box;
+        display: block;
+        font-weight: 900;
+        -webkit-mask-image: none;
+        overflow: hidden;
+        padding: 1.2rem 3rem;
+        position: relative;
+        text-transform: uppercase;
+      }
+      .btn-56:hover {
+        -webkit-animation: pulse 0.5s;
+        animation: pulse 0.5s;
+        box-shadow: 0 0 0 2em transparent;
+      }
+      @-webkit-keyframes pulse {
+        0% {
+          box-shadow: 0 0 0 0 #fff;
+        }
+      }
+      @keyframes pulse {
+        0% {
+          box-shadow: 0 0 0 0 #fff;
+        }
+      }
     </style>
   </head>
   <body>
@@ -68,7 +139,7 @@
         <input type="email" class="jose" required />
         <label for="password">Contraseña</label>
         <input type="password" class="jose" required />
-        <button type="submit" class="jose" id="b">Crear Cuenta</button>
+        <button type="submit" class="btn-56">Crear Cuenta</button>
       </form>
     </div>
   </body>
